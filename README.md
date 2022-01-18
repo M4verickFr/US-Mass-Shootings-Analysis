@@ -15,6 +15,7 @@ Initially, the approach comes from a school project in engineering training "Inf
 ## 🛠️ How to use 
 
 1️⃣ Clone the Git
+
 2️⃣ Go to the folder to execute the following command to install all packages
 
 ```sh
