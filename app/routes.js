@@ -4,4 +4,8 @@ module.exports = function(app) {
         res.render('index');
     });
 
+    app.get('/example',function(req,res){
+        res.render('example');
+    });
+
 }

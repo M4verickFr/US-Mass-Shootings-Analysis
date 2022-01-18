@@ -3,11 +3,58 @@
         <link rel="stylesheet" href="styles/styles.css" />
         <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
         <script type="text/javascript" src="https://d3js.org/topojson.v3.min.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     </head>
     <body>
-        <div id="map"></div>
+        <div id="title">Mass Shootings repartition in the US</div>
+        <div id="container">
+            <div id="map-container">
+                <svg id="map"></svg>
+            </div>
+            <div id="timeline-container">
+                <p id="timeline-title">Mass Shootings by Week</p>
+                <div id="timeline-body">
+                    <div id="select">
+                        <label><input type="radio" name="view" value="Events" checked="">Events</label>
+                        <label><input type="radio" name="view" value="Dead">Dead</label>
+                        <label><input type="radio" name="view" value="Injured">Injured</label>
+                      </div>
+                    <svg id="timeline"></svg>
+                </div>
+            </div>
+            <div id="tooltip"></div>
+
+            <div id="details">
+                <p id="det-title"><b>🚀 Understand our project!</b></p><br>
+
+                <p> The objective of this project is to visualize and analyze the different mass-shooting in the USA. </p>
+                
+                <p> With the different graphs, we can make a comparison according to the states, and the period and see the different global statistics on the events. </p>
+                
+                <p> Initially, the approach comes from a school project in engineering training "Informatique Données d'Usages" at Polytech Annecy-Chambéry. Our goal was to make a one-page representation with the help of the d3JS library. </p>
+                <br>
+                <p><b>🔗 Link to the GitHub</b> : <a href=”https://github.com/M4verickFr/D3js-US-Mass-Shootings”> Here </a></p>
+
+                <br>
+                <p><b> 🤝 The project was carried out by two students:</p></b>
+                <p><i>PERROLLAZ Maverick</i> <a href=”https://github.com/M4verickFr”> @M4verickFr</a></p>
+                <p><i>CAULLIREAU Dorian</i> <a href=”https://github.com/caullird”> @caullird </a></p>
+                
+                
+            </div>
+
+            <div id="stats">
+                <p id="stats-title">Global stats</p>
+                <div id="legend">
+                    <p><span class="stat-head">Total Shootings:</span><span class="stat-body">8</span></p>
+                    <p><span class="stat-head">Total Dead:</span><span class="stat-body">5</span></p>
+                    <p><span class="stat-head">Total Injured:</span><span class="stat-body">6</span></p>
+                </div>
+                <div id="charts"></div>
+            </div>
+        </div>
+
+        <script src="javascripts/settings.js"></script>
+        <script src="javascripts/tools.js"></script>
         <script src="javascripts/main.js"></script>
     </body>
 </html>
