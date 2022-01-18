@@ -1,4 +1,4 @@
-# 🔫🇺🇸 D3js-US-Mass-Shootings
+# 🔫📛 D3js-US-Mass-Shootings
 
 The objective of this project is to visualize and analyze the different mass-shooting in the USA.
 
